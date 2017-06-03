@@ -13,6 +13,13 @@
 		4DDC6B1C1EE27FA300A26CE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDC6B1A1EE27FA300A26CE8 /* Main.storyboard */; };
 		4DDC6B1E1EE27FA300A26CE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DDC6B1D1EE27FA300A26CE8 /* Assets.xcassets */; };
 		4DDC6B211EE27FA300A26CE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDC6B1F1EE27FA300A26CE8 /* LaunchScreen.storyboard */; };
+		4DDC6B471EE280F100A26CE8 /* MainUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDC6B451EE280F100A26CE8 /* MainUIViewController.m */; };
+		4DDC6B481EE280F100A26CE8 /* MainUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DDC6B461EE280F100A26CE8 /* MainUIViewController.xib */; };
+		4DDC6B501EE283C600A26CE8 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDC6B4F1EE283C600A26CE8 /* NotificationCenter.framework */; };
+		4DDC6B541EE283C600A26CE8 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDC6B531EE283C600A26CE8 /* TodayViewController.m */; };
+		4DDC6B571EE283C600A26CE8 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDC6B551EE283C600A26CE8 /* MainInterface.storyboard */; };
+		4DDC6B5B1EE283C600A26CE8 /* MeditationWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4DDC6B4D1EE283C600A26CE8 /* MeditationWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4DDC6B611EE29B0700A26CE8 /* infotobe.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4DDC6B601EE29B0700A26CE8 /* infotobe.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +37,28 @@
 			remoteGlobalIDString = 4DDC6B0D1EE27FA300A26CE8;
 			remoteInfo = Meditation;
 		};
+		4DDC6B591EE283C600A26CE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DDC6B061EE27FA300A26CE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DDC6B4C1EE283C600A26CE8;
+			remoteInfo = MeditationWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DDC6B5F1EE283C600A26CE8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4DDC6B5B1EE283C600A26CE8 /* MeditationWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4DDC6B0E1EE27FA300A26CE8 /* Meditation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meditation.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +73,16 @@
 		4DDC6B221EE27FA300A26CE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DDC6B271EE27FA300A26CE8 /* MeditationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeditationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DDC6B321EE27FA300A26CE8 /* MeditationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeditationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDC6B441EE280F100A26CE8 /* MainUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainUIViewController.h; sourceTree = "<group>"; };
+		4DDC6B451EE280F100A26CE8 /* MainUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainUIViewController.m; sourceTree = "<group>"; };
+		4DDC6B461EE280F100A26CE8 /* MainUIViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainUIViewController.xib; sourceTree = "<group>"; };
+		4DDC6B4D1EE283C600A26CE8 /* MeditationWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MeditationWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDC6B4F1EE283C600A26CE8 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		4DDC6B521EE283C600A26CE8 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		4DDC6B531EE283C600A26CE8 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		4DDC6B561EE283C600A26CE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4DDC6B581EE283C600A26CE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DDC6B601EE29B0700A26CE8 /* infotobe.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = infotobe.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +107,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4DDC6B4A1EE283C600A26CE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDC6B501EE283C600A26CE8 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				4DDC6B101EE27FA300A26CE8 /* Meditation */,
+				4DDC6B511EE283C600A26CE8 /* MeditationWidget */,
+				4DDC6B4E1EE283C600A26CE8 /* Frameworks */,
 				4DDC6B0F1EE27FA300A26CE8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,6 +134,7 @@
 				4DDC6B0E1EE27FA300A26CE8 /* Meditation.app */,
 				4DDC6B271EE27FA300A26CE8 /* MeditationTests.xctest */,
 				4DDC6B321EE27FA300A26CE8 /* MeditationUITests.xctest */,
+				4DDC6B4D1EE283C600A26CE8 /* MeditationWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,6 +151,10 @@
 				4DDC6B1F1EE27FA300A26CE8 /* LaunchScreen.storyboard */,
 				4DDC6B221EE27FA300A26CE8 /* Info.plist */,
 				4DDC6B111EE27FA300A26CE8 /* Supporting Files */,
+				4DDC6B441EE280F100A26CE8 /* MainUIViewController.h */,
+				4DDC6B451EE280F100A26CE8 /* MainUIViewController.m */,
+				4DDC6B461EE280F100A26CE8 /* MainUIViewController.xib */,
+				4DDC6B601EE29B0700A26CE8 /* infotobe.plist */,
 			);
 			path = Meditation;
 			sourceTree = "<group>";
@@ -114,6 +167,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4DDC6B4E1EE283C600A26CE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DDC6B4F1EE283C600A26CE8 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DDC6B511EE283C600A26CE8 /* MeditationWidget */ = {
+			isa = PBXGroup;
+			children = (
+				4DDC6B521EE283C600A26CE8 /* TodayViewController.h */,
+				4DDC6B531EE283C600A26CE8 /* TodayViewController.m */,
+				4DDC6B551EE283C600A26CE8 /* MainInterface.storyboard */,
+				4DDC6B581EE283C600A26CE8 /* Info.plist */,
+			);
+			path = MeditationWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -124,10 +196,12 @@
 				4DDC6B0A1EE27FA300A26CE8 /* Sources */,
 				4DDC6B0B1EE27FA300A26CE8 /* Frameworks */,
 				4DDC6B0C1EE27FA300A26CE8 /* Resources */,
+				4DDC6B5F1EE283C600A26CE8 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4DDC6B5A1EE283C600A26CE8 /* PBXTargetDependency */,
 			);
 			name = Meditation;
 			productName = Meditation;
@@ -170,6 +244,23 @@
 			productReference = 4DDC6B321EE27FA300A26CE8 /* MeditationUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		4DDC6B4C1EE283C600A26CE8 /* MeditationWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DDC6B5E1EE283C600A26CE8 /* Build configuration list for PBXNativeTarget "MeditationWidget" */;
+			buildPhases = (
+				4DDC6B491EE283C600A26CE8 /* Sources */,
+				4DDC6B4A1EE283C600A26CE8 /* Frameworks */,
+				4DDC6B4B1EE283C600A26CE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MeditationWidget;
+			productName = MeditationWidget;
+			productReference = 4DDC6B4D1EE283C600A26CE8 /* MeditationWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -196,6 +287,11 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 4DDC6B0D1EE27FA300A26CE8;
 					};
+					4DDC6B4C1EE283C600A26CE8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = KQEEXHDD6G;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 4DDC6B091EE27FA300A26CE8 /* Build configuration list for PBXProject "Meditation" */;
@@ -214,6 +310,7 @@
 				4DDC6B0D1EE27FA300A26CE8 /* Meditation */,
 				4DDC6B261EE27FA300A26CE8 /* MeditationTests */,
 				4DDC6B311EE27FA300A26CE8 /* MeditationUITests */,
+				4DDC6B4C1EE283C600A26CE8 /* MeditationWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -223,9 +320,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DDC6B611EE29B0700A26CE8 /* infotobe.plist in Resources */,
 				4DDC6B211EE27FA300A26CE8 /* LaunchScreen.storyboard in Resources */,
 				4DDC6B1E1EE27FA300A26CE8 /* Assets.xcassets in Resources */,
 				4DDC6B1C1EE27FA300A26CE8 /* Main.storyboard in Resources */,
+				4DDC6B481EE280F100A26CE8 /* MainUIViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +342,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4DDC6B4B1EE283C600A26CE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDC6B571EE283C600A26CE8 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -253,6 +360,7 @@
 				4DDC6B191EE27FA300A26CE8 /* ViewController.m in Sources */,
 				4DDC6B161EE27FA300A26CE8 /* AppDelegate.m in Sources */,
 				4DDC6B131EE27FA300A26CE8 /* main.m in Sources */,
+				4DDC6B471EE280F100A26CE8 /* MainUIViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +378,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4DDC6B491EE283C600A26CE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDC6B541EE283C600A26CE8 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -282,6 +398,11 @@
 			isa = PBXTargetDependency;
 			target = 4DDC6B0D1EE27FA300A26CE8 /* Meditation */;
 			targetProxy = 4DDC6B331EE27FA300A26CE8 /* PBXContainerItemProxy */;
+		};
+		4DDC6B5A1EE283C600A26CE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DDC6B4C1EE283C600A26CE8 /* MeditationWidget */;
+			targetProxy = 4DDC6B591EE283C600A26CE8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -300,6 +421,14 @@
 				4DDC6B201EE27FA300A26CE8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4DDC6B551EE283C600A26CE8 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DDC6B561EE283C600A26CE8 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -469,6 +598,30 @@
 			};
 			name = Release;
 		};
+		4DDC6B5C1EE283C600A26CE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = KQEEXHDD6G;
+				INFOPLIST_FILE = MeditationWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oyty.Meditation.MeditationWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4DDC6B5D1EE283C600A26CE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = KQEEXHDD6G;
+				INFOPLIST_FILE = MeditationWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oyty.Meditation.MeditationWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -507,6 +660,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		4DDC6B5E1EE283C600A26CE8 /* Build configuration list for PBXNativeTarget "MeditationWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDC6B5C1EE283C600A26CE8 /* Debug */,
+				4DDC6B5D1EE283C600A26CE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
