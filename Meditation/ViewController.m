@@ -96,8 +96,42 @@ UILabel *contentLabel;
 }
 
 -(void) addAction {
+    [self Click:(nil)];
+}
+
+
+- (IBAction)Click:(id)sender {
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"请输入" preferredStyle:UIAlertControllerStyleAlert];
+    //增加确定按钮；
+    [alertController addAction:[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        //获取第1个输入框；
+        UITextField *userNameTextField = alertController.textFields.firstObject;
+        
+        [array setValue:@"addnew" forKey:userNameTextField.text];
+        
+        
+    
+        
+        NSLog(@"用户名 = %@",userNameTextField.text);
+        
+    }]];
+    
+    //增加取消按钮；
+    [alertController addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:nil]];
+    
+    //定义第一个输入框；
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+        textField.placeholder = @"请输入...";
+    }];
+    
+    
+    [self presentViewController:alertController animated:true completion:nil];
     
 }
+
+
+
 
 -(UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
